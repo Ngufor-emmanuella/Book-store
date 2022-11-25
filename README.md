@@ -1,16 +1,10 @@
-
-
-# Math Magician: setup
-In this project I built a Book store app Using the following
--React Router.
--Use React components.
--Use React props.
--Use React state.
--Delete all the boilerplate from CRA (text, images, styles).
--create a directory called components.
--Inside components, create a new Calculator.js file.
-> Learning objectives
-
+# book-store
+in this project I did the following :
+-Initialise React app.
+-Create a directory for my components.
+-Add React Router and set two <Route>s and <Link>s for the app's navigation:
+-Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
+-display a form for adding a book
 - Set up a React app.
 - Use React documentation.
 
@@ -40,6 +34,7 @@ To track linter errors locally follow these steps:
 Download all the dependencies run:
 ```
 npm install
+npm start
 ```
 Track HTML linter errors run:
 ```
