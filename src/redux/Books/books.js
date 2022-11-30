@@ -14,7 +14,7 @@ export const removeBooks = (payload) => ({
 
 // create reducers
 const initialState = {
-  books: [],
+  Books: [],
 };
 
 const bookReducer = (state = initialState, action) => {
