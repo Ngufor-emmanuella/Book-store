@@ -20,10 +20,11 @@ export const removeBooks = (text) => ({
 const initialState = [];
 
 const bookReducer = (state = initialState, action) => {
-  const { type, payload } = action;
-  switch (type) {
-    case ADD_BOOK:
-      return state.filter((books) => books.id !== payload);
+  if (action.type === 'ADD_BOOK') {
+    return [...state, action.payload];
+  } else (action.type === 'REMOVE_BOOK'); {
+    return state.map((Books) => Books.id !== payload)
+  } else {
     default:
       return state;
   }
