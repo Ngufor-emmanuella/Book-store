@@ -5,17 +5,16 @@ export const statusChecker = () => ({
   Payload: 'UNDER_CONSTRUCTION',
 });
 
-const initialState = [];
+const initialState = {
+  books: [],
+};
 
 // reducers
 const statusCheckerReducer = (state = initialState, action) => {
-  const { type, payload } = action;
-  switch (type) {
-    case STATUS_CHECKER:
-      return payload;
-    default:
-      return state;
+  if (action.type === STATUS_CHECKER) {
+    return 'UNDER_CONSTRUCTION';
   }
+  return state;
 };
 
 export default statusCheckerReducer;

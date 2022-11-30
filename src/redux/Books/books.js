@@ -2,29 +2,28 @@ const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
 // action creators
-export const addBooks = (text) => ({
+export const addBooks = (payload) => ({
   type: ADD_BOOK,
-  payload: {
-    text,
-  },
+  payload,
 });
 
-export const removeBooks = (text) => ({
+export const removeBooks = (payload) => ({
   type: REMOVE_BOOK,
-  payload: {
-    text,
-  },
+  payload,
 });
 
 // create reducers
-const initialState = [];
+const initialState = {
+  books: [],
+};
 
 const bookReducer = (state = initialState, action) => {
-  if (action.type === 'ADD_BOOK') {
-    return [...state, action.payload];
-  } else (action.type === 'REMOVE_BOOK'); {
-    return state.push((Books) => Books.id !== payload)
-  } else {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [...state, action.payload];
+
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.payload);
     default:
       return state;
   }
