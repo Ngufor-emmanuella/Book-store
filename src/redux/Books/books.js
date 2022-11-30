@@ -23,7 +23,7 @@ const bookReducer = (state = initialState, action) => {
   if (action.type === 'ADD_BOOK') {
     return [...state, action.payload];
   } else (action.type === 'REMOVE_BOOK'); {
-    return state.map((Books) => Books.id !== payload)
+    return state.push((Books) => Books.id !== payload)
   } else {
     default:
       return state;
