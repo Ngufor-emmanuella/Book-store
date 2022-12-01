@@ -13,12 +13,33 @@ export const removeBooks = (payload) => ({
 });
 
 // create reducers
-const initialState = [];
+const initialState = [{
+  id: '1',
+  title: 'The complete reference',
+  author: 'John dee',
+},
+{
+  id: '2',
+  title: 'The complete React Book',
+  author: 'Rashid',
+},
+{
+  id: '3',
+  title: 'Data structure and algorithm',
+  author: 'Ngufor',
+},
+];
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.payload];
+      return [...state,
+        {
+          id: action.payload.id,
+          title: action.payload.title,
+          author: action.payload.author,
+        },
+      ];
 
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.payload);
