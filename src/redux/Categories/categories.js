@@ -2,19 +2,18 @@ const STATUS_CHECKER = 'STATUS_CHECKER';
 
 export const statusChecker = () => ({
   type: 'STATUS_CHECKER',
-  Payload: 'UNDER_CONSTRUCTION',
 });
 
-const initialState = {
-  books: [],
-};
+const initialState = [];
 
 // reducers
 const statusCheckerReducer = (state = initialState, action) => {
-  if (action.type === STATUS_CHECKER) {
-    return 'UNDER_CONSTRUCTION';
+  const { type } = action;
+  switch (type) {
+    case STATUS_CHECKER:
+      return 'Under construction';
+    default:
+      return state;
   }
-  return state;
 };
-
 export default statusCheckerReducer;

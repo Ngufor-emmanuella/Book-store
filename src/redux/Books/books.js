@@ -13,9 +13,7 @@ export const removeBooks = (payload) => ({
 });
 
 // create reducers
-const initialState = {
-  books: [],
-};
+const initialState = [];
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {

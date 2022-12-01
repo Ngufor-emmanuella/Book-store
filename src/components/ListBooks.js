@@ -1,40 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Books from './Book';
-import Forms from './form';
 
-function BookList() {
-  const myBooks = [
-    {
-      id: 1,
-      title: 'The Hunger Games',
-      author: 'Suzanana Collins',
-    },
-    {
-      id: 2,
-      title: 'Ape Ships',
-      author: 'Will Smiths',
-    },
-    {
-      id: 3,
-      title: 'Keeping Up With The Kardashians',
-      author: 'Chirs Jenner',
-    },
-  ];
+const BookList = (props) => {
+  const { myBooks } = props;
 
   return (
-    <div>
-      <ul className="final-book">
-        {myBooks.map((myBook) => (
-          <Books
-            key={myBook.id}
-            title={myBook.title}
-            author={myBook.author}
-          />
-        ))}
-      </ul>
-      <Forms />
-    </div>
+    <ul className="final-book">
+      {myBooks.map((myBook) => (
+        <Books
+          key={myBook.id}
+          title={myBook.title}
+          author={myBook.author}
+          id={myBook.id}
+        />
+      ))}
+    </ul>
   );
-}
+};
+
+BookList.propTypes = {
+  myBooks: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
+    }),
+  ).isRequired,
+};
 
 export default BookList;

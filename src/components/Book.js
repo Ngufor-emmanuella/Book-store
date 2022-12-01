@@ -1,9 +1,9 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBooks } from '../redux/Books/books';
 
-function Books(props) {
+const Books = (props) => {
   const dispatch = useDispatch();
 
   const { title, author, id } = props;
@@ -26,7 +26,7 @@ function Books(props) {
       <button type="submit" className="remove-button" onClick={() => handClick(id)}>Remove</button>
     </div>
   );
-}
+};
 
 Books.propTypes = {
   title: PropTypes.string,

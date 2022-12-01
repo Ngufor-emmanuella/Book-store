@@ -23,8 +23,8 @@ function Forms() {
     <div className="genaral-contain">
       <h1 className="heading"> ADD NEW BOOK</h1>
       <form className="list-form" onSubmit={handSubmit}>
-        <input type="text" name="title" placeholder="Book Title Here" />
-        <input type="text" name="author" placeholder="Author Name Here" />
+        <input type="text" name="title" placeholder="Book Title Here" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input type="text" name="author" placeholder="Author Name Here" value={author} onChange={(e) => setTitle(e.target.value)} />
         <button className="button-sub" type="submit">Add Book</button>
       </form>
     </div>
