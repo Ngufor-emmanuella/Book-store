@@ -7,14 +7,14 @@ function Categories() {
   const dispatch = useDispatch();
   dispatch(statusChecker());
   const msg = useSelector((state) => state.handleStatus);
-  const handSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setMsg(msg);
   };
 
   return (
     <>
-      <button className="loading" type="submit" name="button" onClick={handSubmit}>Check Status</button>
+      <button className="loading" type="submit" name="button" onClick={handleSubmit}>Check Status</button>
       <p>{msgPlaceholder}</p>
     </>
   );

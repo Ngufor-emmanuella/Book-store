@@ -11,7 +11,7 @@ function Books() {
     // eslint-disable-next-line
     }, []);
 
-  const books = useSelector((state) => state.handBook);
+  const books = useSelector((state) => state.handleBook.entities);
 
   return (
     <>

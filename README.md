@@ -57,9 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
+# 📖 [book-store] <a name="about-project"></a>
 
 **[book-store]** is a web app thats used to store different components of the app and also display books when put into use.
 In this project I did the following changes
@@ -103,8 +101,8 @@ Fetched list of books.
 > Describe between 1-3 key features of the application.
 
 - **[book-store]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Add-book]**
+- **[Remove-book]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,9 +219,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Edit-book]**
+- [ ] **[Comments-book]**
+- [ ] **[Delete-book]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -277,7 +275,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

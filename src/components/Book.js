@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/Books/books';
@@ -6,7 +5,7 @@ import { removeBook } from '../redux/Books/books';
 function Books(props) {
   const { id, title, author } = props;
   const dispatch = useDispatch();
-  const handSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(removeBook(id));
   };
@@ -19,7 +18,7 @@ function Books(props) {
         <span className="authors">{author}</span>
         <div className="button">
           <button type="submit">Comments</button>
-          <button onClick={handSubmit} type="submit">Remove</button>
+          <button onClick={handleSubmit} type="submit">Remove</button>
           <button type="submit">Edit</button>
         </div>
       </div>
@@ -27,10 +26,10 @@ function Books(props) {
       <div className="reading">
         <div className="pre-pre">
           <div className="progress" />
-          <div className="reading-desc">
+          <div className="read-desc">
             <div className="oval" />
-            <div className="p-container">
-              <span className="percent-complete">78%</span>
+            <div className="container">
+              <span className="percent-com">78%</span>
               <span className="com">Completed</span>
             </div>
           </div>
@@ -46,6 +45,7 @@ function Books(props) {
 }
 
 Books.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
   author: PropTypes.string,
 }.isRequired;
