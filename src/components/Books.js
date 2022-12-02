@@ -11,12 +11,12 @@ function Books() {
     // eslint-disable-next-line
     }, []);
 
-  const books = useSelector((state) => state.handBook.entities);
+  const books = useSelector((state) => state.handBook);
 
   return (
     <>
       <div className="shelf">
-        {books.map((book) => (
+        {books?.map((book) => (
           <Book
             key={book.id}
             id={book.id}
