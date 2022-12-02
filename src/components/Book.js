@@ -1,32 +1,49 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBooks } from '../redux/Books/books';
+import { removeBook } from '../redux/Books/books';
 
-const Books = (props) => {
+function Books(props) {
+  const { id, title, author } = props;
   const dispatch = useDispatch();
-
-  const { title, author, id } = props;
-
-  const handClick = (id) => {
-    dispatch(removeBooks(id));
+  const handSubmit = (e) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
   };
 
   return (
-    <div className="containerBook">
-      <ul>
-        <li className="book-lists">
-          {title}
-          {' '}
-          By
-          {' '}
-          {author}
-        </li>
-      </ul>
-      <button type="submit" className="remove-button" onClick={() => handClick(id)}>Remove</button>
+    <div className="book-list">
+      <div>
+        <span className="cate">Category</span>
+        <h2>{title}</h2>
+        <span className="authors">{author}</span>
+        <div className="button">
+          <button type="submit">Comments</button>
+          <button onClick={handSubmit} type="submit">Remove</button>
+          <button type="submit">Edit</button>
+        </div>
+      </div>
+
+      <div className="reading">
+        <div className="pre-pre">
+          <div className="progress" />
+          <div className="reading-desc">
+            <div className="oval" />
+            <div className="p-container">
+              <span className="percent-complete">78%</span>
+              <span className="com">Completed</span>
+            </div>
+          </div>
+        </div>
+        <div className="chapter-progress">
+          <h3>CURRENT CHAPTER</h3>
+          <p>Chapter 12</p>
+          <button type="submit">UPDATE PROGRESS</button>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 Books.propTypes = {
   title: PropTypes.string,
