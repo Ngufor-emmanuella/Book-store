@@ -1,22 +1,21 @@
 # book-store
-in this project I did the following :
--Initialise React app.
--Create a directory for my components.
--Add React Router and set two <Route>s and <Link>s for the app's navigation:
--Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
--display a form for adding a book
-- Set up a React app.
-- Use React documentation.
+book store is a web app thats used to store different components of the app and also display books when put into use.
+I implemented the following in this project:
+-Connected app to API.
+-Add the book and remove book still working as before.
+-Fetched book list from Bookstore API on Books page load.
+Added an Action Creator, that returns a function.
+Fetched list of books.
 
 ## Built With
 
-- REACT
+- REACT-REDUX
 - HTML.
 - CSS.
 - JAVASCRIPT.
 - Check the code with Linters tests.
 
-## Live Demo ( https://ngufor-emmanuella.github.io/math-magicians/)
+## Live Demo ()
 
 
 ## Getting Started
