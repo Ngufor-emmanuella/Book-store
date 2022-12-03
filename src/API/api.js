@@ -26,4 +26,4 @@ const fetchAPI = async () => {
   return fetchedData;
 };
 
-export { addAPI, fetchAPI, removeAPI };
+export { fetchAPI, removeAPI, addAPI };
