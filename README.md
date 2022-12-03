@@ -1,86 +1,282 @@
-# book-store
-in this project I did the following :
--Initialise React app.
--Create a directory for my components.
--Add React Router and set two <Route>s and <Link>s for the app's navigation:
--Create a component called Book for displaying a single book (receive a title and an author as prop) and reuse it in a component that displays a list of books.
--display a form for adding a book
-- Set up a React app.
-- Use React documentation.
+<a name="readme-top"></a>
 
-## Built With
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-- REACT
-- HTML.
-- CSS.
-- JAVASCRIPT.
-- Check the code with Linters tests.
+Modify this file to match your project and remove sections that don't apply.
 
-## Live Demo ( https://ngufor-emmanuella.github.io/math-magicians/)
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
+After you're finished please remove all the comments and instructions!
+-->
 
-## Getting Started
+<div align="center">
 
-To get a local copy up and running follow these simple example steps:
-- git clone git@github.com:Ngufor-emmanuella/math-magician.git
-- cd math-magician
-- npm install
-- npm start
-- index.html
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-### Run Tests
-To track linter errors locally follow these steps:  
+  <h3><b>Microverse README Template</b></h3>
 
-Download all the dependencies run:
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [book-store] <a name="about-project"></a>
+
+**[book-store]** is a web app thats used to store different components of the app and also display books when put into use.
+In this project I did the following changes
+-Connected app to API.
+-Add the book and remove book still working as before.
+-Fetched book list from Bookstore API on Books page load.
+Added an Action Creator, that returns a function.
+Fetched list of books.
+
+## 🛠 Built With <a name="built-with">create-react-app tools | webpack| babel (code traspiling)| Eslint | JEST</a>
+
+### Tech Stack <a name="tech-stack">Major languages(HTML,JAVASCRIPT,CSS)</a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features">Key Features</a>
+
+> Describe between 1-3 key features of the application.
+
+- **[book-store]**
+- **[Add-book]**
+- **[Remove-book]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+```sh
+ npm install
 ```
-npm install
 npm start
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+```sh
+copy the code in the green button in the repo and do git clone and paste link
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
 ```
-Track HTML linter errors run:
+
+
+### Install
+
+Install this project with:
+-Git
+-Node
+-
+<!--
+Example command:npm install
+
+```sh
+  cd my-project
+  gem install
 ```
-npx hint .
+--->
+
+### Usage
+
+To run the project, execute the following command:
+# npm install
+<!--
+Example command:
+
+```sh
+  rails server
 ```
-Track CSS linter errors run:
+--->
+
+### Run tests
+#npm start
+To run tests, run the following command:
+
+<!--
+Example command:npm start
+
+```sh
+  bin/rails test test/models/article_test.rb
 ```
-npx stylelint "**/*.{css,scss}"
-```
-Track JavaScript linter errors run:
-```
-npx eslint .
-```
+--->
 
 ### Deployment
 
-- I used GitHub Pages to deploy my website
-- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
+You can deploy this project using:
 
+<!--
+Example:
 
-## Authors
+```sh
 
-👤 Ngufor emmauella
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors">Ngufor emmanuella</a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Nowembabazi Nickson**
 
 - GitHub: [@Ngufor-emmanuella](https://github.com/Ngufor-emmanuella)
-- LinkedIn: [Ngufor emmanuella](https://www.linkedin.com/in/Ngufor-emmanuella//)
+- Twitter: [@Ngufor-emmanuella](https://twitter.com/Ngufor-emmanuella)
+- LinkedIn: [Ngufor-emmanuella](https://linkedin.com/in/Ngufor-emmanuella)
 
-## Credits
 
-- Topic inspired by [Microverse](https://www.microverse.org/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[Edit-book]**
+- [ ] **[Comments-book]**
+- [ ] **[Delete-book]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-## Show your support
+Feel free to check the [issues page](../../issues/).
 
-Give a ⭐️ if you like this project and how we manage to build it!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+<!-- SUPPORT -->
 
-- Thanks to the Microverse team for the great curriculum.
-- Thanks to the Code Reviewer(s) for the insightful feedbacks.
-- A great thanks to My coding partner, morning session team, and standup team for their contributions.
-- Hat tip to anyone whose code was used.
+## ⭐️ Show your support <a name="support"></a>
 
-## 📝 License
+> Write a message to encourage readers to support your project
 
-This project is [MIT](LICENSE) licensed
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

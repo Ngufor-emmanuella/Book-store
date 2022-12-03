@@ -1,9 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
-    <div className="nav-bar">
+    <div className="bar">
       <div className="logo">
         <h1 className="logo-head">BookStore CMS</h1>
       </div>
