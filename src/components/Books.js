@@ -15,7 +15,7 @@ function Books() {
 
   return (
     <>
-      <div className="shelf">
+      <div className="book-mark">
         {books?.map((book) => (
           <Book
             key={book.id}

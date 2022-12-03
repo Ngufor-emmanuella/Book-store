@@ -11,7 +11,7 @@ function Books(props) {
   };
 
   return (
-    <div className="book-list">
+    <div className="buks-list">
       <div>
         <span className="cate">Category</span>
         <h3>{title}</h3>
@@ -27,14 +27,14 @@ function Books(props) {
         <div className="pre-pre">
           <div className="progress" />
           <div className="read-desc">
-            <div className="oval" />
+            <div className="round" />
             <div className="container">
               <span className="percent-com">78%</span>
-              <span className="com">Completed</span>
+              <span className="comon">Completed</span>
             </div>
           </div>
         </div>
-        <div className="chapter-progress">
+        <div className="first-chap">
           <h2>CURRENT CHAPTER</h2>
           <p>Chapter 12</p>
           <button type="submit">UPDATE PROGRESS</button>
