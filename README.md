@@ -204,8 +204,6 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Nowembabazi Nickson**
-
 - GitHub: [@Ngufor-emmanuella](https://github.com/Ngufor-emmanuella)
 - Twitter: [@Ngufor-emmanuella](https://twitter.com/Ngufor-emmanuella)
 - LinkedIn: [Ngufor-emmanuella](https://linkedin.com/in/Ngufor-emmanuella)
